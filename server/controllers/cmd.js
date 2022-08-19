@@ -67,10 +67,16 @@ module.exports.catchChirpStack = async (req, res) => {
     return;
   }
 
-  const DEV_EUI = bs64Toarrbuf(req.body.devEUI)
-    .map((cur) => cur.toString(16).padStart(2, "0"))
-    .join("");
+  const DEV_EUI_buf = bs64Toarrbuf(req.body.devEUI)
+  var DEV_EUI = "";
+  for (let i = 0; i < DEV_EUI_buf.length; i++)
+  {
+    DEV_EUI += DEV_EUI_buf[i].toString(16).padStart(2, "0");
+  }
+    
   const buf = bs64Tohex(req.body.data);
+  
+  console.log("DEV_EUI: ", DEV_EUI);
 
   let offset = 0;
   let command_type = buf.getUint8(offset++);

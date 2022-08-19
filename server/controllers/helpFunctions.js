@@ -1,5 +1,7 @@
 const hexToArrayBuffer = require("hex-to-array-buffer");
 const decode = require("base64-arraybuffer");
+var textEncoding = require('text-encoding');  
+var TextDecoder = textEncoding.TextDecoder;
 
 module.exports.bs64Toarrbuf = (inData) => {
   return new Uint8Array(decode.decode(inData));

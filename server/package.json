@@ -34,6 +34,7 @@
     "mongoose": "^6.3.8",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.16",
-    "sqlite3": "^5.0.8"
+    "sqlite3": "^5.0.8",
+    "text-encoding": "^0.7.0"
   }
 }
