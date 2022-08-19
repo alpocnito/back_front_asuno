@@ -13,8 +13,8 @@ const App = () => {
   }, [dispatch]);
 
   const devsEUI = [
-    "2222222222222222",
-    "3333333333333333",
+    "2984e4ab0e35e3bd",
+    "f7537cfb0ad062ec",
   ];
 
   return (
