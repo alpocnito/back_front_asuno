@@ -1,4 +1,4 @@
-const hexToArrayBuffer = require("fix-esm").require("hex-to-array-buffer");
+const hexToArrayBuffer = require("hex-to-array-buffer");
 const decode = require("base64-arraybuffer");
 
 module.exports.bs64Toarrbuf = (inData) => {
@@ -22,7 +22,7 @@ module.exports.hexTobs64 = (inData) => {
   //console.log(hexToArrayBuffer(hex_str));
 
   //console.log("Send command: ", decode.encode(hexToArrayBuffer(hex_str)));
-  let outData = decode.encode(hexToArrayBuffer.default(hex_str));
+  let outData = decode.encode(hexToArrayBuffer(hex_str));
 
   return outData;
 };

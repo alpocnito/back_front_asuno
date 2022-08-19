@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // const SERVER_URL = "10.15.30.207";
-const SERVER_URL = "10.15.30.46";
+const SERVER_URL = "localhost";
 
 const SERVER_CMD = "http://" + SERVER_URL + ":5001/cmds";
 const SERVER_GET = "http://" + SERVER_URL + ":5001/get";

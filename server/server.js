@@ -22,12 +22,12 @@ app.use("/cmds", cmdRoutes);
 // LongPulling
 app.use("/get", getRoutes);
 
-// // Frontend
-// app.use(express.static(path.join(__dirname, "build")));
+// Frontend
+app.use(express.static(path.join(__dirname, "build")));
 
-// app.get("/", function (req, res) {
-//   res.sendFile(path.join(__dirname, "build", "index.html"));
-// });
+app.get("/", function (req, res) {
+  res.sendFile(path.join(__dirname, "build", "index.html"));
+});
 
 //////////////////////////////////// ERRORS /////////////////////////////////////////
 app.use("*", (req, res, next) => {
