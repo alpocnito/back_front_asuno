@@ -535,7 +535,7 @@ const DataDisplay = (props) => {
           </Grid>
           <Grid item>
             <Button variant="outlined" onClick={getDataFromBD}>
-              Загрузить блять данные из базы
+              Загрузить данные из базы
             </Button>
           </Grid>
           {/* <Grid item>
