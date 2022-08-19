@@ -32,7 +32,7 @@ module.exports.sendCommand = async (req, res) => {
     headers: {
       "Content-Type": "application/json",
       Authorization: CHIRP_API_KEY,
-      "Content-Type": "application/json",
+      "Grpc-Metadata-Authorization": "Bearer " + CHIRP_API_KEY,
     },
   };
 
