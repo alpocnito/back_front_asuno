@@ -1,0 +1,26 @@
+.__react-details {
+  font: 12px DejaVuSansMono, monospace, sans-serif;
+  color: #a9abb3;
+  border: 1px solid hsla(0, 0%, 100%, 0.16);
+  border-bottom: 1px solid rgb(95, 95, 102);
+  border-color: rgb(95, 95, 102);
+  width: 450px;
+  border-radius: 16px;
+  margin: 10px;
+}
+
+.__react-details-summary {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 16px 24px;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-bottom: 1px dotted hsla(0, 0%, 100%, 0.05);
+  transition: font-size 0.1s;
+  border-radius: 16px;
+}
+
+.__react-details[open] .__react-details-summary {
+  font-size: 12px;
+}

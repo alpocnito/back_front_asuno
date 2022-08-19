@@ -1,0 +1,11 @@
+{
+  "editor.formatOnSave": true,
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "cmake.configureOnOpen": false,
+  "cortex-debug.variableUseNaturalFormat": true
+}
